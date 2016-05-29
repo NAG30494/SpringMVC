@@ -3,26 +3,28 @@
 "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
 	<definition name="DefaultTemplate" template="/jsp/app.jsp">
-	<put-attribute name="menu" value="/jsp/common/menu.jsp" />
+	<!--   <put-attribute name="menu" value="/jsp/common/menu.jsp" /> -->
 		<put-attribute name="body" value="" />
-		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content-menu" value=""/>
 	</definition>
 	
 	<definition name="/login"  template="/jsp/loginTemplate.jsp" >
 		<put-attribute name="body" value="/jsp/common/login.jsp" />
-		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
 	</definition>
 
 	<definition name="/common/**" extends="DefaultTemplate">
 		<put-attribute name="body" value="/jsp/common/{1}.jsp" />
+		<put-attribute name="content-menu" value="/jsp/lookup/menu.jsp"/>
 	</definition>
 	
 	<definition name="/user/**" extends="DefaultTemplate">
 		<put-attribute name="body" value="/jsp/user/{1}.jsp" />
+		<put-attribute name="content-menu" value="/jsp/lookup/menu.jsp"/>
 	</definition>
 	
 	<definition name="/lookup/**" extends="DefaultTemplate">
 		<put-attribute name="body" value="/jsp/lookup/{1}.jsp" />
+		<put-attribute name="content-menu" value="/jsp/lookup/menu.jsp"/>
 	</definition>
 
 </tiles-definitions> 

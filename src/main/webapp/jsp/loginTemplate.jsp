@@ -39,8 +39,9 @@
 			</div>
 		</div>
 	</div>
-
-	</div>
-	 <tiles:insertAttribute name="footer" />
-	</div>
+<footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Copyright <a href="#">boddu.nageswar@hotmail.com</a></p>
+      </div>
+    </footer>
 </html>

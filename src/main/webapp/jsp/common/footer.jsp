@@ -1,5 +1,5 @@
-<style>
 <!--
+<style>
 hr {
 	-moz-border-bottom-colors: none;
 	-moz-border-image: none;
@@ -11,7 +11,6 @@ hr {
 	border-width: 5px 0;
 	margin: 18px 0;
 }
--->
 </style>
 
 <footer class="section">
@@ -19,9 +18,14 @@ hr {
 		<div class="row">
 			<div class="col-md-12">
 				<hr>
-				&copy; Copyright <a href="#">boddu.nageswar@hotmail.com</a>
+				
 				</div>
 			</div>
 		</div>
 	</div>
-</footer>
+</footer> -->
+ <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Copyright <a href="#">boddu.nageswar@hotmail.com</a></p>
+      </div>
+    </footer>
