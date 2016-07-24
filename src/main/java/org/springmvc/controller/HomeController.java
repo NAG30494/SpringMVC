@@ -20,4 +20,13 @@ public class HomeController extends AbstractController {
 
 	}
 
+	@RequestMapping(value={"/home"} ,method = RequestMethod.GET)
+	public ModelAndView sendMail(HttpServletRequest request, HttpServletResponse response) {
+		log.warn(" Calling redirectLogin :" );
+		ModelAndView forwardPage = new ModelAndView("/login");
+		return forwardPage;
+
+	}
+
+	
 }

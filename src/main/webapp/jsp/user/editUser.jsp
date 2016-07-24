@@ -108,7 +108,7 @@
 								code="generic.description" /></label>
 					</div>
 					<div class="col-sm-10">
-						<textarea id="userDescription" name="userDescription" cols="100"
+						<textarea id="userDescription" name="userDescription" cols="70"
 							rows="5"
 							placeholder='<spring:message code="generic.description"/>'
 							> ${User.userDescription} </textarea>

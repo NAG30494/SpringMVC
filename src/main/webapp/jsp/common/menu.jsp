@@ -13,6 +13,7 @@
 				<li class="active"><a href="${pageContext.request.contextPath}/home">Home</a></li>
 				<li><a href="${pageContext.request.contextPath}/user/displayAllUser.htm">User</a></li>
 				<li><a href="${pageContext.request.contextPath}/lookup/lookup.htm">Lookup</a></li>
+				<li><a href="${pageContext.request.contextPath}/common/SendMail.htm">Lookup</a></li>
 			</ul>
 		</div>
 	</div>

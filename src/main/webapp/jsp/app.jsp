@@ -26,7 +26,7 @@
 		String[] val = null;
 	%>
 	<%-- <tiles:insertAttribute name="menu" /> --%>
-
+<div>
 	<div class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<div class="navbar-header">
