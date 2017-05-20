@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.springmvc.dao">
+	<class name="LoginHistory" table="LOGIN_HISTORY">
+		<meta attribute="extends">BaseDao</meta>
+		<id name="id" type="long" column="ID">
+			<generator class="identity" />
+		</id>
+
+		<property name="userId" type="long">
+			<column name="USER_ID" not-null="true" sql-type="bigint" />
+		</property>
+		<property name="isSuccess" type="boolean">
+			<column name="IS_SUCCESS" not-null="true" sql-type="char(1)" />
+		</property>
+
+		<property name="ipAddress" type="java.lang.String">
+			<column name="IP_ADDRESS" not-null="true" sql-type="varchar(50)" />
+		</property>
+
+		<property name="jSessionId" type="java.lang.String">
+			<column name="J_SESSION_ID" not-null="true" sql-type="varchar(100)" />
+		</property>
+
+		<property name="createdOn" type="java.sql.Timestamp">
+			<column name="CREATED_ON" not-null="true" sql-type="datetime" />
+		</property>
+		<property name="createdBy" type="java.lang.String">
+			<column name="CREATED_BY" not-null="true" sql-type="varchar(50)" />
+		</property>
+		<property name="lastModOn" type="java.sql.Timestamp">
+			<column name="LAST_MOD_ON" not-null="true" sql-type="datetime" />
+		</property>
+		<property name="lastModBy" type="java.lang.String">
+			<column name="LAST_MOD_BY" not-null="true" sql-type="varchar(50)" />
+		</property>
+		<property name="lockTs" type="long">
+			<column name="LOCK_TS" not-null="true" sql-type="bigint" />
+		</property>
+	</class>
+</hibernate-mapping>

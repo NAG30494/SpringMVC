@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<Context path="/SpringMVC" debug="5" reloadable="true"
-	crossContext="true" useHttpOnly="true">
-	<Resource name="jdbc/springMVC" auth="Container" type="javax.sql.DataSource"
-		username="root" password="admin" driverClassName="com.mysql.jdbc.Driver"
-		url="jdbc:mysql://localhost:3306/springmvc" maxTotal="100" maxIdle="4" />
-</Context>
